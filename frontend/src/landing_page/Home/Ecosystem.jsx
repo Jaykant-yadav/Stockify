@@ -65,7 +65,7 @@ export default function Ecosystem() {
                   className="text-decoration-none fw-semibold"
                   style={{ fontSize: "17px" }}
                 >
-                  Explore our products <i class="fa-solid fa-arrow-right"></i>
+                  Explore our products <i className="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
               <div className="col-6">
@@ -74,7 +74,7 @@ export default function Ecosystem() {
                   className="text-decoration-none fw-semibold"
                   style={{ fontSize: "17px" }}
                 >
-                  Try Kite Demo <i class="fa-solid fa-arrow-right"></i>
+                  Try Kite Demo <i className="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>

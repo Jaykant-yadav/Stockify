@@ -3,7 +3,7 @@ import React from 'react'
 export default function Education() {
   return (
     <>
-      <div className="container px-5 py-5 mt-5">
+      <div className="container px-5 py-5">
         <div className="row px-5">
           <div className="col-6">
             <a href="/">
