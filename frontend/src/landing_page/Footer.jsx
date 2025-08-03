@@ -7,8 +7,8 @@ const fontStyle = {
 export default function Footer() {
   return (
     <>
-      <footer>
-        <div className="container px-5">
+      <footer style={{ backgroundColor: '#f8f9fa', color: '#6c757d' }}>
+        <div className="container px-5 py-4">
           <div className='row px-5'>
             <div className='col-4'>
               <div className=''>

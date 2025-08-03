@@ -8,7 +8,7 @@ export default function Pricing() {
   return (
     <>
       <div className='container px-5 py-5'>
-        <div className='row px-5 py-5'>
+        <div className='row px-5 py-5 shadow rounded-4'>
           <div className='col-5'>
             <h3>Transparent pricing</h3>
             <p className='mt-4'>We pioneered the concept of discount broking and price<br /> transparency in India. Flat fees and no hidden charges.</p>
