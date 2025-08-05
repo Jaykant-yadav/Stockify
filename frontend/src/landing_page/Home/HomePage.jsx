@@ -12,14 +12,12 @@ import Media from './Media'
 export default function HomePage() {
     return (
         <>
-            <Navbar />
             <Hero />
             <Ecosystem />
             <Media />
             <Pricing />
             <Education />
             <OpenAccount />
-            <Footer />
         </>
     )
 }
