@@ -23,7 +23,7 @@ export default function Hero() {
           <p style={HeadingStyle}>Now, we are breaking ground with our technology.</p>
         </div>
         <hr />
-        <div className=' p-4 rounded-4 p-5'>
+        <div className='p-4 rounded-4 p-5'>
           <div className='row px-5'>
             <div className='col-6 p-5'>
               <p style={fontStyle}>
