@@ -76,7 +76,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div class="row smallprint mt-4 px-5">
+          <div className="row smallprint mt-4 px-5">
             <p className='text-muted' style={fontStyle}>
               Zerodha Broking Ltd.: Member of NSE, BSE​ &amp;​ MCX – SEBI
               Registration no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
