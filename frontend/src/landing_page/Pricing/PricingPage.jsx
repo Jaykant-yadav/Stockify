@@ -5,15 +5,17 @@ import Currency from "./Currency";
 import Commodity from "./Commodity";
 import Hero from "./Hero";
 import { useState } from "react";
+import ChargeAccOpening from "./ChargeAccOpening";
+import ChargeExplained from "./ChargeExplained";
 
 export default function PricingPage() {
   const [activeTab, setActiveTab] = useState("equity");
 
   return (
     <>
-      <div className="container mt-4">
+      <div className="container px-5">
         <Hero />
-        <div className="">
+        <div className="px-5">
           <ul className="nav nav-tabs">
             <li className="nav-item">
               <button
@@ -42,8 +44,8 @@ export default function PricingPage() {
           </ul>
         </div>
 
-        <div className="card mt-3">
-          <div className="card-body py-5">
+        <div className="card mt-2 mx-5">
+          <div className="card-body py-4">
             {activeTab === "equity" && <Equity />}
 
             {activeTab === "currency" && <Currency />}
@@ -51,6 +53,9 @@ export default function PricingPage() {
             {activeTab === "commodity" && <Commodity />}
           </div>
         </div>
+
+        <ChargeAccOpening/>
+        <ChargeExplained/>
       </div>
     </>
   )

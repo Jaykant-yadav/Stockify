@@ -4,67 +4,53 @@ function Currency() {
   return (
     <>
       <table className="table table-bordered">
-        <thead>
+        <thead className='text-center'>
           <tr>
             <th></th>
-            <th>Equity delivery</th>
-            <th>Equity intraday</th>
-            <th>F&O - Futures</th>
-            <th>F&O - Options</th>
+            <th>Currency futures</th>
+            <th>Currency options</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-center'>
           <tr>
             <td>Brokerage</td>
-            <td>Zero Brokerage</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>Flat Rs. 20 per executed order</td>
+            <td>0.03% or ₹ 20/executed order whichever is lower</td>
+            <td>₹ 20/executed order</td>
           </tr>
           <tr>
             <td>STT/CTT</td>
-            <td>0.1% on buy & sell</td>
-            <td>0.025% on sell side</td>
-            <td>0.02% on sell side</td>
-            <td>
-              <ul>
-                <li>0.125% on exercised options</li>
-                <li>0.1% on sell side (premium)</li>
-              </ul>
-            </td>
+            <td>No STT	</td>
+            <td>No STT	</td>
           </tr>
           <tr>
             <td>Transaction charges</td>
             <td>
               <ul>
-                <li>NSE: 0.00297%</li>
-                <li>BSE: 0.00375%</li>
+                <li style={{listStyle: "none"}}>NSE: 0.00035%</li>
+                <li style={{listStyle: "none"}}>BSE: 0.00045%</li>
               </ul>
             </td>
-            <td>Zero Brokerage</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>Flat Rs. 20 per executed order</td>
+            <td>
+              <ul>
+                <li style={{listStyle: "none"}}>NSE: 0.0311%</li>
+                <li style={{listStyle: "none"}}>BSE: 0.001%</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>GST</td>
-            <td>Zero Brokerage</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>Flat Rs. 20 per executed order</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
           </tr>
           <tr>
             <td>SEBI charges</td>
-            <td>Zero Brokerage</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>Flat Rs. 20 per executed order</td>
+            <td>₹10 / crore</td>
+            <td>₹10 / crore</td>
           </tr>
           <tr>
             <td>Stamp charges</td>
-            <td>Zero Brokerage</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>0.03% or Rs. 20/executed order whichever is lower</td>
-            <td>Flat Rs. 20 per executed order</td>
+            <td>0.0001% or ₹10 / crore on buy side</td>
+            <td>0.0001% or ₹10 / crore on buy side</td>
           </tr>
         </tbody>
       </table>
