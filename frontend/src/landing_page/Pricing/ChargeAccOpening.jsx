@@ -39,11 +39,11 @@ export default function ChargeAccOpening() {
                     <table className="table table-bordered mt-4">
                         <thead>
                             <tr>
-                                <th className='text-start'>Value of holdings</th>
+                                <th>Value of holdings</th>
                                 <th>AMC</th>
                             </tr>
                         </thead>
-                        <tbody className='text-start'>
+                        <tbody>
                             <tr>
                                 <td>Up to ₹4 lakh</td>
                                 <td><span class="badge text-bg-success">Free</span></td>
@@ -70,7 +70,7 @@ export default function ChargeAccOpening() {
                         <thead>
                             <tr>
                                 <th>Service</th>
-                                <th>Billing Frquency	</th>
+                                <th>Billing Frquency</th>
                                 <th>Charges</th>
                             </tr>
                         </thead>
