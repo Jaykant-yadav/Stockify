@@ -1,4 +1,9 @@
-import React from 'react'
+import { useContext, useState } from "react";
+import { watchlist } from '../Data/Data';
+import { Tooltip, Grow } from '@mui/material';
+import { KeyboardArrowDown, KeyboardArrowUp, MoreHoriz, BarChartOutlined } from '@mui/icons-material';
+import GeneralContext from "./GeneralContext";
+const labels = watchlist.map((subArray) => subArray["name"]);
 
 function WatchLists() {
     const data = {
@@ -29,32 +34,30 @@ function WatchLists() {
     };
 
     return (
-        <>
-            <div className="watchlist-container">
-                <div className="search-container">
-                    <input
-                        type="text"
-                        name="search"
-                        id="search"
-                        placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
-                        className="search"
-                    />
-                    <span className="counts"> {watchlist.length} / 50</span>
-                </div>
-
-                <ul className="list">
-                    {watchlist.map((stock, index) => {
-                        return <WatchListItem stock={stock} key={index} />;
-                    })}
-                </ul>
-
-                {/* <DoughnutChart data={data} /> */}
+        <div className="watchlist-container">
+            <div className="search-container">
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
+                    className="search"
+                />
+                <span className="counts"> {watchlist.length} / 50</span>
             </div>
-        </>
+
+            <ul className="list">
+                {watchlist.map((stock, index) => {
+                    return <WatchListItem stock={stock} key={index} />;
+                })}
+            </ul>
+
+            {/* <DoughnutChart data={data} /> */}
+        </div>
     )
 }
 
-export default WatchLists
+export default WatchLists;
 
 const WatchListItem = ({ stock }) => {
     const [showWatchlistActions, setShowWatchlistActions] = useState(false);

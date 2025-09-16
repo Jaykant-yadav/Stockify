@@ -85,4 +85,4 @@ function Fund() {
     )
 }
 
-export default Fund
+export default Fund;

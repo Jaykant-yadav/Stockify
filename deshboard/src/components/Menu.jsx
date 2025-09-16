@@ -27,7 +27,7 @@ function Menu() {
                 to="/"
                 onClick={() => handleMenuClick(0)}
               >
-                <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
+                <p className={selectedMenu === 0 ? activeMenuClass : menuClass} style={{fontWeight: '500'}}>
                   Dashboard
                 </p>
               </Link>
@@ -68,7 +68,7 @@ function Menu() {
             <li>
               <Link
                 style={{ textDecoration: "none" }}
-                to="funds"
+                to="/funds"
                 onClick={() => handleMenuClick(4)}
               >
                 <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
@@ -80,9 +80,9 @@ function Menu() {
               <Link
                 style={{ textDecoration: "none" }}
                 to="/apps"
-                onClick={() => handleMenuClick(6)}
+                onClick={() => handleMenuClick(5)}
               >
-                <p className={selectedMenu === 6 ? activeMenuClass : menuClass}>
+                <p className={selectedMenu === 5  ? activeMenuClass : menuClass}>
                   Apps
                 </p>
               </Link>

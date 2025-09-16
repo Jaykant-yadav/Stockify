@@ -5,22 +5,22 @@ import Apps from '../App'
 import Holdings from './Holdings'
 import Orders from './Orders'
 import Positions from './Positions'
-import Funds from './Fund'
+import Funds from './Funds'
 import Summary from './Summary'
 import WatchList from './WatchLists'
-import { GeneralContextProvider } from '../context/GeneralContext'
+import { GeneralContextProvider } from './GeneralContext'
 
 
 function Deshboard() {
     return (
         <>
             <div className="dashboard-container">
-                <GeneralContextProvider>
+                {/* <GeneralContextProvider> */}
                     <WatchList />
-                </GeneralContextProvider>
+                {/* </GeneralContextProvider> */}
                 <div className="content">
                     <Routes>
-                        <Route exact path="/" element={<Summary />} />
+                        <Route path="/" element={<Summary />} />
                         <Route path="/orders" element={<Orders />} />
                         <Route path="/holdings" element={<Holdings />} />
                         <Route path="/positions" element={<Positions />} />
