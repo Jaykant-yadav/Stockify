@@ -19,7 +19,7 @@ export default function Universe() {
           <p className='fs-5 text-muted'>Want to know more about our technology stack? Check out the <a href='#' className='text-decoration-none fw-semibold'>Stockify.tech</a> blog.</p>
         </div>
         <div>
-          <h4 className='text-center'>The Zerodha Universe</h4>
+          <h4 className='text-center'>The Stockify Universe</h4>
           <p className='text-center py-2'>Extend your trading and investment experience even further with our partner platforms</p>
           <div className='row px-5 text-center'>
             <div className='col-4 p-5'>

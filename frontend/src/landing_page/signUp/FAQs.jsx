@@ -75,7 +75,7 @@ function FAQs() {
                                 </h2>
                                 <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <p>To open a demat account, you must have a bank account in your name.<br/>
+                                        <p>To open a demat account, you must have a bank account in your name.<br />
                                             If UPI verification is completed successfully, no proof of bank is needed. However, if bank verification fails, you'll need to provide either a cancelled cheque or a bank statement to link your bank account to Zerodha.</p>
                                     </div>
                                 </div>
